@@ -1,0 +1,190 @@
+@font-face {
+	font-family: Buda;
+	src: url(fonts/Buda-Light.ttf);
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+	font-family: verdana, arial, sans-serif;
+}
+
+a {
+	-webkit-transition: all linear .2s;
+	-moz-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+	color: rgba(255,255,255,0.6);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+.page {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: block;
+	min-height: 130%;
+	box-sizing: border-box;
+	-webkit-box-shadow: #000 0 0 10px;
+	-moz-box-shadow: #000 0 0 10px; /* color, h-offset, v-offset, blur, spread */
+	box-shadow: #000 0 0 10px; /* inset is optional */
+	text-align: center;
+}
+
+#page-portfolio {
+	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#8AC924), to(#6C9C21)); /* for older webkit */
+	background-image: -webkit-radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
+	background-image: -moz-radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
+	background-image: radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
+	z-index: 3;
+}
+
+#page-about {
+	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#73ADD1), to(#3A93C9)); /* for older webkit */
+	background-image: -webkit-radial-gradient(center center, circle closest-corner, #73ADD1 10%, #3A93C9 120%);
+	background-image: -moz-radial-gradient(center center, circle closest-corner, #73ADD1 10%, #3A93C9 120%);
+	background-image: radial-gradient(center center, circle closest-corner, #73ADD1 10%, #3A93C9 120%);
+	z-index: 2;
+}
+
+#page-contact {
+	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#C9493A), to(#9C2D21)); /* for older webkit */
+	background-image: -webkit-radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
+	background-image: -moz-radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
+	background-image: radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
+	z-index: 1;
+	color: #fff;
+}
+
+header.small {
+	background: rgba(0,0,0,0.25);
+	font-family: Buda;
+	height: 3rem;
+}
+
+nav, footer, .content-page article {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 0.8rem;
+	position: relative;
+}
+
+header.small nav ul {
+
+}
+
+header.small nav ul li {
+	float: right;
+}
+
+header.small nav ul li a {
+	color: #fff;
+	font-size: 1rem;
+	padding: 0.5rem 0.8rem;
+	line-height: 3.5rem;
+	text-decoration: none;
+	text-shadow: #333 1px 0 0;
+	color: rgba(255,255,255,0.75)
+}
+
+header.small li.logo a {
+	font-size: 1.2rem;
+	background: url(images/logo-lemon.svg) top right no-repeat;
+	background-size: auto 80%;
+	background-position: top right;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	color: rgba(255,255,255,0.85);
+}
+
+header.small nav ul li a:hover {
+	color: rgba(255,255,255,1);
+}
+
+.content-page article {
+	padding-top: 5rem;
+	text-align: left;
+}
+
+.content-page article h2 {
+	font-size: 3rem;
+}
+
+#page-contact article p.adresse {
+	float: right;
+	font-size: 1rem;
+	text-align: right;
+	position: absolute;
+	right: 0.8rem;
+	line-height: 120%;
+	font-family: 'Buda';
+	text-transform: lowercase;
+}
+
+
+
+#page-contact article form {
+	margin: 3rem 0;
+}
+
+#page-contact article form label {
+	clear: both;
+	width: 200px;
+	display: block;
+	margin: 1rem 0 0.2rem 0;
+
+}
+
+#page-contact article form input, #page-contact article form textarea {
+	width: 40%;
+	padding: 8px;
+	border: 1px solid rgba(33,33,33,0.8);
+	border-radius: 3px;
+	background: rgba(33,33,33,0.3);
+	color: #fff;
+	-webkit-box-shadow: rgba(33,33,33,0.8) 0 0 5px inset;
+	-moz-box-shadow: rgba(33,33,33,0.8) 0 0 5px inset;
+	box-shadow: rgba(33,33,33,0.8) 0 0 5px inset;
+}
+
+#page-contact article form input:focus, #page-contact article form textarea:focus {
+	outline:0;
+}
+
+#page-contact article form textarea {
+	width: 60%;
+	height: 150px;
+}
+
+#page-contact article form input.button {
+	width: 20%;
+	margin: 1rem 0.5rem 0 0;
+	-webkit-transition: all linear .2s;
+	-moz-transition: all linear .2s;
+	-o-transition: all linear .2s;
+	transition: all linear .2s;
+	-webkit-box-shadow: rgba(33,33,33,0.8) 0 0 2px;
+	-moz-box-shadow: rgba(33,33,33,0.8) 0 0 2px;
+	box-shadow: rgba(33,33,33,0.8) 0 0 2px;
+}
+
+#page-contact article form input.button:hover {
+	background: rgba(33,33,33,0.6);
+	-webkit-box-shadow: rgba(33,33,33,0.8) 0 0 5px;
+	-moz-box-shadow: rgba(33,33,33,0.8) 0 0 5px;
+	box-shadow: rgba(33,33,33,0.8) 0 0 5px;
+}
+
+footer {
+	margin-top: 15%;
+}
