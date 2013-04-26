@@ -28,9 +28,15 @@ jQuery(document).ready(function() {
 			if (currentBottomPossition >= startPosition && currentTopPosition <= endPosition)
 			{
 				var pageContent = $(this).children("article"),
+					backgroundContainer = $(this).children(".background");
 					paddingCalculated = ((startPosition-currentTopPosition) / viewportHeight * paddingParalax) + paddingOffset;
 
 				pageContent.css('padding-top', paddingCalculated + 'rem' );
+
+				if (backgroundContainer)
+				{
+
+				}
 			}
 
 			// holding and scrolling page header navigation

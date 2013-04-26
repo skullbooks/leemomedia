@@ -33,7 +33,7 @@ a:hover {
 	padding: 0;
 	position: relative;
 	display: block;
-	min-height: 130%;
+	min-height: 120%;
 	box-sizing: border-box;
 	-webkit-box-shadow: #000 0 0 10px;
 	-moz-box-shadow: #000 0 0 10px; /* color, h-offset, v-offset, blur, spread */
@@ -64,6 +64,11 @@ a:hover {
 	background-image: radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
 	z-index: 1;
 	color: #fff;
+}
+
+a.anchor {
+	position: absolute;
+	top: 0;
 }
 
 header.small {
@@ -127,6 +132,34 @@ header.small nav ul li a:hover {
 .content-page article h2 {
 	font-size: 3rem;
 }
+
+.content-page article p {
+	font-size: 0.8rem;
+}
+
+#page-about article p.bio {
+	margin: 3rem 0 2rem 0;
+}
+
+#page-about article p.connect {
+	margin: 0 0 2rem 0;
+}
+
+#page-about article p.skills {
+	margin: 3rem 0 0 0;
+	font-size: 0.6rem;
+	opacity: 0.5;
+}
+
+#page-about .background {
+	position: absolute;
+	width: 78em;
+	height: 75em;
+	background: url(images/about-bg.png) center top no-repeat;
+	right: 0;
+	bottom: 0;
+}
+
 
 #page-contact article p.adresse {
 	float: right;
