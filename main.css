@@ -42,26 +42,26 @@ a:hover {
 }
 
 #page-portfolio {
-	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#8AC924), to(#6C9C21)); /* for older webkit */
-	background-image: -webkit-radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
-	background-image: -moz-radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
-	background-image: radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#fff), to(#ddd)); /* for older webkit */
+	background-image: -webkit-radial-gradient(center center, circle closest-corner, #fff 10%, #ddd 120%);
+	background-image: -moz-radial-gradient(center center, circle closest-corner, #fff 10%, #ddd 120%);
+	background-image: radial-gradient(center center, circle closest-corner, #fff 10%, #ddd 120%);
 	z-index: 3;
 }
 
 #page-about {
-	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#73ADD1), to(#3A93C9)); /* for older webkit */
-	background-image: -webkit-radial-gradient(center center, circle closest-corner, #73ADD1 10%, #3A93C9 120%);
-	background-image: -moz-radial-gradient(center center, circle closest-corner, #73ADD1 10%, #3A93C9 120%);
-	background-image: radial-gradient(center center, circle closest-corner, #73ADD1 10%, #3A93C9 120%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#8AC924), to(#6C9C21)); /* for older webkit */
+	background-image: -webkit-radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
+	background-image: -moz-radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
+	background-image: radial-gradient(center center, circle closest-corner, #8AC924 10%, #6C9C21 120%);
 	z-index: 2;
 }
 
 #page-contact {
-	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#C9493A), to(#9C2D21)); /* for older webkit */
-	background-image: -webkit-radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
-	background-image: -moz-radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
-	background-image: radial-gradient(center center, circle closest-corner, #C9493A 10%, #9C2D21 120%);
+	background-image: -webkit-gradient(radial, center center, 10, center center, 120, from(#312f43), to(#2c2b3b)); /* for older webkit */
+	background-image: -webkit-radial-gradient(center center, circle closest-corner, #312f43 10%, #2c2b3b 120%);
+	background-image: -moz-radial-gradient(center center, circle closest-corner, #312f43 10%, #2c2b3b 120%);
+	background-image: radial-gradient(center center, circle closest-corner, #312f43 10%, #2c2b3b 120%);
 	z-index: 1;
 	color: #fff;
 }
@@ -69,6 +69,54 @@ a:hover {
 a.anchor {
 	position: absolute;
 	top: 0;
+}
+
+header.big {
+	font-family: Buda;
+	padding-top: 14%;
+	padding-bottom: 40px;
+	text-shadow: #333 1px 0 0;
+}
+
+header.big h1.logo a {
+	font-size: 3.8rem;
+	background: url(images/logo-lemon.svg) top right no-repeat;
+	background-size: auto 85%;
+	background-position: top right;
+	padding: 1.8rem 3.4rem;
+	color: rgba(0,0,0,0.85);
+	text-shadow: #fff 1px 0 0, #fff 0 0 40px;
+}
+
+header.big .subline {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	font-weight: 100;
+	text-shadow: none;
+	padding: 1rem;
+}
+
+header.big ul {
+	margin: 0 auto;
+	width: 30rem;
+	overflow: auto;
+	display: none;
+}
+
+header.big ul li {
+	float: right;
+	margin: 0 auto;
+}
+
+header.big ul li a {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 100;
+	text-shadow: none;
+	color: #aaa;
+	padding: 5px 15px;
+	float: left;
+	font-size: 1.8em;
 }
 
 header.small {
