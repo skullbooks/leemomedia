@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 		$(".content-page").each(function() {
 			var startPosition = $(this).position().top,
 				endPosition = startPosition + $(this).height(),
-				paddingOffset = 8,
+				paddingOffset = 25,
 				paddingParalax = 50;
 
 			// paralactic scrolling of on content pages
